@@ -1,5 +1,7 @@
 <?php 
 
+
+
 $servername = "localhost";
 $username = "root"; 
 $password = "123@123Aa"; 
@@ -33,6 +35,8 @@ $result = mysqli_query($conn, $sql);
         <textarea id="description" name="description" placeholder="Nội dung blog"></textarea><br>
         <input type="submit" value="Thêm">
 </form>
+
+<a href="logout.php" class="btn btn-primary">Log Out</a>
 
 <h2>Các bài đăng đã có:</h2>
 <ul>
