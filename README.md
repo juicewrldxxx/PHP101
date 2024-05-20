@@ -1,3 +1,3 @@
 # PHP101
 Basic
-PHP + mysql
+PHP + mysql + apache
