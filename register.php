@@ -11,13 +11,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "INSERT INTO user (username, password) VALUES ($username, $password)";
+     $sql = "INSERT INTO user (username, password) VALUES ('$username', '$password')";
     if (mysqli_query($conn, $sql)){
-        echo " Dang ky thanh cong";
+        echo "<script>alert('Dang ky thanh cong'); 
+        window.location.href = 'login.php';</script>";
     } 
     else {
         echo "ERROR: ". $sql . "<br>" . mysqli_error(($conn));
     }
+
 
 
 }
